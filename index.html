@@ -31,6 +31,20 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Estilos para computadores (desktop) */
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Estilos para tablets e celulares (telas menores que 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%; /* Ajusta para ocupar toda a largura */
+        padding: 0 20px; /* Adiciona margem interna */
+    }
+}
+
 iframe {
     border-radius: 6px;
 }
@@ -53,19 +67,6 @@ h4 {
     display: block;
 }
 
-.h-ins {
-    display: block;
-    text-align: right;
-    margin-top: -50vh;
-    margin-right: 200px;
-}
-
-.h-ins2 {
-    display: block;
-    text-align: right;
-    margin-right: 200px;
-}
-
 .conteudo-principal {
   flex: 1; /* Faz o conteúdo crescer e empurrar o footer */
   margin-left: 20px;
@@ -74,7 +75,10 @@ h4 {
 footer {
   background-color: #2f2f2f;
   color: wheat;
-  padding: 1rem;
+  padding: 5px;
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
 }
 </style>
 </html>
