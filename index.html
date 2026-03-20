@@ -24,7 +24,10 @@
     </div>
 </body>
 <footer> 
-    <p>© 2026 LUCSO Studio. Todos os direitos reservados.</p>
+
+    <div class="footer">
+        <p class="infoot">© 2026 LUCSO Studio. Todos os direitos reservados.</p>
+    </div>
 </footer>
 <style>
     * {
@@ -44,6 +47,7 @@
         padding: 0 20px; /* Adiciona margem interna */
     }
 }
+
 
 iframe {
     border-radius: 6px;
@@ -65,6 +69,7 @@ body {
 
 h4 {
     display: block;
+    
 }
 
 .conteudo-principal {
@@ -75,10 +80,19 @@ h4 {
 footer {
   background-color: #2f2f2f;
   color: wheat;
-  padding: 5px;
+  padding: 2px;
   position: absolute;
   bottom: 0%;
   width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.infoot {
+    font-size: 13px;
 }
 </style>
 </html>
